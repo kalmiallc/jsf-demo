@@ -1,0 +1,3 @@
+[submodule "src/jsf-handlers/common"]
+	path = src/jsf-handlers/common
+	url = https://github.com/kalmiallc/jsf-contrib-handlers.git

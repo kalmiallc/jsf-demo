@@ -1,0 +1,17 @@
+<div>
+  <h1>JSF example</h1>
+  <p>Builder can be found <a routerLink="/builder" routerLinkActive="active">here</a>.</p>
+
+  <!-- we used global theme force so there is no need for: [themeModuleFactory]="defaultDefaultModule" -->
+  <jsf-kal-jsf-doc
+    *ngIf="jsfDoc"
+    [doc]="jsfDoc"
+    [enableThemeRender]="true"
+    [onError]="jsfError"
+    [onFormBuilderCreated]="formBuilderCreated"
+  ></jsf-kal-jsf-doc>
+
+  <h2>JSON output</h2>
+  <p>Enter form data and you will se JSON output here:</p>
+  <code><pre>{{ value | json }}</pre></code>
+</div>
